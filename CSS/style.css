@@ -1,0 +1,683 @@
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body{
+
+    font-family: "Nabla", serif;
+    background-color: #1B1726;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "EDPT" 100,
+      "EHLT" 12;
+  
+}
+
+img{
+    max-width: 500px;
+    max-height: 800px;
+}
+
+.container{
+
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+
+    background-image: url(/imgenes/bg2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0px 0;
+}
+
+.menu{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* LOgo de la pagina */
+.logo {
+
+  display: inline-flex;
+  padding: 10px 12px;
+  border-radius: 10px;
+}
+
+.logo img{
+  height: 8%;                
+  width: 8%;
+  margin-right: 10px;
+}
+
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li{
+    font-size: 18px;
+    padding: 20px;
+    color: aliceblue;
+    font-weight: 600;
+    display: block;
+}
+
+menu .navbar ul li a{
+    color: #FF5A2C;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono{
+    width: 25px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+.header-content{
+    display: flex;
+}
+
+.header-txt{
+    flex-basis: 50%;
+}
+
+.header-txt h1{
+    font-size: 60px;
+    color: #FFFFFF;
+    line-height: 1.3;
+    margin-bottom: 25px;
+}
+
+.header-txt span{
+    color: #FF5A2C;
+}
+
+.header-txt p{
+    font-size: 17px;
+    color: #E0E0E0;
+    margin-bottom: 45px;
+}
+
+.butons{
+    display: flex;
+}
+
+.btn-1, .btn-2, .btn-3{
+    display: inline-block;
+    padding: 11px 35px;
+    border: 2px solid #431794;
+    border-radius: 25px;
+    border-right: 25px;
+    font-size: 17px;
+    color: #E0E0E0;
+}
+
+.btn-1:hover{
+    background-color: #2f00ff;
+}
+
+.btn-2:hover{
+    background-color: #2f00ff;
+}
+
+.popular{
+    padding: 100px 0;
+    text-align: center;
+}
+
+h2{
+    color: #FFFFFF;
+    font-size: 35px;
+    margin-bottom: 45px;
+}
+
+/* Movimiento de las imagenes de la seccion Juegos Populares */
+.slider {
+    
+    position: relative;
+    overflow: hidden;
+    margin-top: 1rem;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    flex: 0 0 33.333%;
+    height: 720px;
+    margin-right: 1rem;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 40px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+/* Estilo de las imagenes */
+.slide img {
+    width: 100%;
+    height: 560px;          
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+
+  /* Animacion de zoom */
+  .slide:hover img {
+    transform: scale(1.1);
+  }
+
+/* Titulo para las imagenes */
+
+.slide h3 {
+    position: absolute;
+    bottom: 160px;
+    left: 16px;
+    margin: 0;
+    color: white;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+    pointer-events: none;
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    padding: 0.5rem 0.75rem;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 4px;
+}
+
+.slider-btn.prev { left: 8px;}
+.slider-btn.next { right: 8px;}
+
+/*  */
+.popular-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.popular-content img{
+    width: 150px;
+    
+   
+}
+
+/* Todos los juegos diseño */
+.product-content{
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 50px;
+}
+
+.product-content img{
+    width: 400px;
+
+}
+
+/* Animacion de zoom para Todos los juegos */
+.product-1{
+    background-color: #2A223A;
+
+}
+
+.product-1 img{
+    transition: transform 0.3s ease;
+}
+
+.product-1:hover img{
+    transform: scale(1.1);
+}
+
+.product-txt{
+    padding: 50px 30px;
+}
+
+h3{
+    font-size: 20px;
+    color: #E0E0E0;
+    margin-bottom: 20px;
+}
+
+.play{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.btn-2{
+    padding: 5px 25px;
+    background-color: #431794;
+    margin-right: 0;
+}
+
+.contact{
+    padding: 150px 300px;
+}
+
+.contact-content{
+    background-color: #2A223A;
+    text-align: center;
+    padding: 50px;
+    border-radius: 50px;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+input{
+    padding: 18px 25px;
+    background-color: #3F3456;
+    border: 0;
+    border-radius: 25px;
+    outline: none;
+    margin-right: 10px;
+    color: #FFFFFF;
+    font-size: 17px;
+}
+
+::placeholder{
+    color: #E0E0E0;
+    font-size: 17px;
+}
+
+.btn-3{
+    background-color: #2f00ff;
+    cursor: pointer;
+    margin-right: 0;
+}
+/* DISEÑO DEL FOOTER */
+.footer {
+  background-color: #111;
+  color: #ddd;
+}
+
+/* Contenedor general centrado */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* --- Footer Top: logo | nav (4 cols) | social --- */
+.footer-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-bottom: 1px solid #333;
+  padding-bottom: 2rem;
+  gap: 2rem;
+}
+
+/* Logo */
+.footer-logo img {
+  height: 40px;
+}
+
+/* Nav de columnas */
+.footer-nav {
+  display: flex;
+  flex: 1;            /* ocupa el espacio entre logo y social */
+  gap: 2rem;          /* separación entre columnas */
+}
+
+/* Cada columna ocupa el mismo ancho */
+.footer-col {
+  flex: 1;
+}
+
+.footer-col h4 {
+  color: #fff;
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-col li a {
+  color: #bbb;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-col li a:hover {
+  color: #fff;
+}
+
+/* Redes sociales */
+.footer-social {
+    display: flex;
+   
+}
+
+.footer-social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+/* .footer-social img {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(1);
+} */
+
+/* --- Footer Bottom: copyright y back-to-top --- */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.5rem;
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: #666;
+  font-size: 0.8rem;
+}
+
+.back-to-top {
+  background-color: rgba(255,255,255,0.1);
+  color: #ddd;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.back-to-top:hover {
+  background-color: rgba(255,255,255,0.2);
+}
+
+.instagram {
+    background-color: #e4405f;
+}
+
+.youtube {
+    background-color: #ff0000;
+}
+
+.twitter {
+    background-color: #1da1f2;
+}
+
+.instagram:hover {
+    background-color: #c13584;
+}
+
+.youtube:hover {
+    background-color: #cc0000;
+}
+
+.twitter:hover {
+    background-color: #0d8ddc;
+}
+
+
+
+/* .link ul{
+    display: flex;
+}
+
+.link ul li > a{
+    font-size: 17px;
+    margin-right: 20px;
+}
+
+.link ul li > a:hover{
+    color: #FFFFFF;
+} */
+/* ================================
+   TABLET HORIZONTAL / DESKTOP PEQUEÑO
+   ================================ */
+   @media (max-width: 991px) {
+    /* Menú */
+    .menu {
+      padding: 20px;
+    }
+    .menu label {
+      display: initial;
+    }
+    .menu .navbar {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background-color: #1B1726;
+      display: none;
+      flex-direction: column;
+    }
+    #menu:checked ~ .navbar {
+      display: flex;
+    }
+    .menu .navbar ul li {
+      width: 100%;
+    }
+    .menu .navbar ul li a:hover {
+      color: #FF5A2C;
+    }
+  
+    /* Header */
+    .header {
+      min-height: auto;
+      padding: 80px 30px 50px;
+    }
+    .header-txt {
+      text-align: center;
+      flex-basis: 100%;
+    }
+    .header-txt h1 {
+      font-size: 50px;
+      margin-bottom: 15px;
+    }
+    .butons {
+      justify-content: center;
+    }
+    .btn-1:last-of-type {
+      margin-right: 0;
+    }
+  
+    /* Slider “Juegos Populares” */
+    .slider-btn {
+      font-size: 1.5rem;
+      padding: 0.3rem 0.5rem;
+    }
+    .slide img {
+      height: 59%;
+    }
+  
+    /* Todos los Juegos */
+    .product {
+      padding: 30px;
+    }
+    .product-content {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+    .product-1 img {
+      width: 100%;
+      height: auto;
+    }
+  
+    /* Contacto */
+    .contact {
+      padding: 30px;
+    }
+    form {
+      flex-direction: column;
+    }
+    form input {
+      margin: 0 0 20px;
+    }
+  
+    /* Footer */
+    .footer {
+      flex-direction: column;
+      text-align: center;
+    }
+    .footer .link + .link {
+      margin-top: 20px;
+    }
+  }
+  
+  /* ================================
+     TABLET VERTICAL / TABLET MÁS PEQUEÑO
+     ================================ */
+  @media (max-width: 768px) {
+    /* Header: texto más pequeño */
+    .header-txt h1 {
+      font-size: 40px;
+    }
+    .header-txt p {
+      font-size: 0.9rem;
+    }
+  
+    /* Slider: 2 items visibles */
+    .slide {
+      flex: 0 0 50%;
+      margin-right: 0.75rem;
+    }
+    .slide img {
+      height: 220px;
+    }
+  
+    /* Productos: 1 columna */
+    .product-content {
+      grid-template-columns: 1fr;
+    }
+  
+    /* Botones más grandes */
+    .btn-1, .btn-2, .btn-3 {
+      padding: 0.8rem 1.2rem;
+      font-size: 0.9rem;
+    }
+
+    .footer-top {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .footer-nav{
+      flex-direction: column;
+      gap: 1.15rem;
+      width: 100%;
+    }
+
+    .footer-social{
+      justify-content: center;
+      margin-top: 1rem;
+    }
+
+    .footer-bottom{
+      flex-direction: column;
+      gap: 1rem;
+      text-align: center;
+    }
+
+  }
+  
+  /* ================================
+     MÓVILES PEQUEÑOS
+     ================================ */
+  @media (max-width: 576px) {
+    /* Menú: ocupar toda la cabecera */
+    .menu.container {
+      padding: 15px;
+    }
+  
+    /* Header: aún más compacto */
+    .header {
+      padding: 60px 20px 40px;
+    }
+    .header-txt h1 {
+      font-size: 32px;
+    }
+    .header-txt p {
+      font-size: 0.8rem;
+    }
+  
+    /* Slider: 1 item visible */
+    .slide {
+      flex: 0 0 100%;
+      margin-right: 0;
+    }
+    .slider-btn {
+      font-size: 1.2rem;
+      padding: 0.2rem 0.4rem;
+    }
+  
+    /* Formulario de contacto */
+    form input {
+      width: 100%;
+    }
+  
+    /* Espaciados más ajustados */
+    section, main, footer {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+  

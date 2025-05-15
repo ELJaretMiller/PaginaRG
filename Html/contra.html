@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contra</title>
+    <link rel="stylesheet" href="/CSS/contraStyle.css">
+</head>
+<body>
+
+    <header>
+
+        <nav id="Up-H" class="navbar">
+
+        <div class="menu container">
+            <a href="/index.html" class="logo">
+                <img src="/imgenes/LOGO.png" alt=""></a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="imgenes/menu.png" class="menu-icono" alt="menu">
+            </label>
+            
+            
+                <ul>
+                    <li><a href="/index.html">Inicio</a></li>
+                    <li><a href="#juegos-popu">Populares</a></li>
+                    <li><a href="#contact-space">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    
+    <main>
+        <h1 class="game-title">CONTRA</h1>
+
+        <div class="game-frame">
+
+            <iframe src="Games/doom2/index.html" frameborder="0">
+                frameborder="0"
+                allowfullscreen
+            </iframe>
+
+        </div>
+    </main>
+
+    <section>
+
+    </section>
+
+    <footer id="contact-space" class="footer">
+
+            <div class="footer-top container" >
+                <div class="footer-logo">
+                    <img src="/imgenes/LOGO.png" alt="RtroGames">
+                </div>
+            </div>
+
+            <nav class="footer-nav">
+                 <div class="footer-col">
+                    <h4>Juegos</h4>
+                     <ul>
+                          <li><a href="#">Doom II</a></li>
+                          <li><a href="#">Castlevania</a></li>
+                           <li><a href="#">Pac-Man</a></li>
+                           <li><a href="#">Super Mario 2</a></li>
+                           <li><a href="#">Contra</a></li>
+                           <li><a href="#">Sonic 2</a></li>
+                           <li><a href="#">Robo Recall</a></li>
+                      </ul>
+                 </div>
+
+      <div class="footer-col">
+        <h4>Tiendas</h4>
+        <ul>
+          <li><a href="#">Epic Games Store</a></li>
+          <li><a href="#">ArtStation</a></li>
+          <li><a href="#">Sketchfab</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Herramientas</h4>
+        <ul>
+          <li><a href="#">Unreal Engine</a></li>
+          <li><a href="#">MetaHuman</a></li>
+          <li><a href="#">Megascans</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Servicios</h4>
+        <ul>
+          <li><a href="#">Online Services</a></li>
+          <li><a href="#">Kids Web Services</a></li>
+          <li><a href="#">Acuerdo de servicios</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Empresa</h4>
+        <ul>
+          <li><a href="#">Acerca de</a></li>
+          <li><a href="#">Noticias</a></li>
+          <li><a href="#">Empleos</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Recursos</h4>
+        <ul>
+          <li><a href="#">MegaGrants</a></li>
+          <li><a href="#">Apoya a un creador</a></li>
+          <li><a href="#">Distribuir en Retro Games</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="footer-social">
+      <!-- Sustituye # por tus enlaces reales -->
+      <a href="#" aria-label="Facebook"><img src="imagenes/icon-facebook.svg" alt=""></a>
+      <a href="#" aria-label="X"><img src="imagenes/icon-x.svg" alt=""></a>
+      <a href="#" aria-label="YouTube"><img src="imagenes/icon-youtube.svg" alt=""></a>
+    </div>
+  </div>
+
+  <!-- Bloque inferior: copyright y botón volver arriba -->
+  <div class="footer-bottom container">
+    <p>© 2025 Retro Games, Inc. Todos los derechos reservados.</p>
+    <a href="#Up-H" class="back-to-top">Volver arriba ↑</a>
+  </div>
+    </footer>
+
+             <script>
+            document.querySelectorAll('a[href^="#"]').forEach(link => {
+              link.addEventListener('click', e => {
+                e.preventDefault();
+                document.querySelector(link.getAttribute('href'))
+                        .scrollIntoView({ behavior: 'smooth' });
+              });
+            });
+          </script>
+    
+</body>
+</html>
