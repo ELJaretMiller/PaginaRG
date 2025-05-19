@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/faq.css">
+    <link rel="stylesheet" href="../ICONS/fontawesome-free-6.7.2-web/fontawesome-free-6.7.2-web/css/all.min.css">
+    <title>FAQ |RG</title>
+</head>
+<body>
+
+    <header id="#Up-H" class="header">
+        
+        <div class="menu container">
+
+      <a href="../index.html" class="logo">
+        <img src="../imgenes/LOGO.png" alt="Retro Games">
+      </a>
+
+      <input type="checkbox" id="menu" />
+      <label for="menu">
+        <img src="../imgenes/menu.png" class="menu-icono" alt="menu">
+      </label>
+
+       <nav class="navbar">
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="acerca.html">Acerca de</a></li>
+          <li><a href="../faq.html">FAQ</a></li>
+          <li><a href="#juegos-popu">Populares</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+      
+    </div>
+  </header>
+
+  <!-- Sección de FAQs -->
+  <main class="faq-section">
+    <h2>Preguntas Frecuentes</h2>
+
+    <details>
+      <summary>¿Cómo puedo jugar sin instalar nada?</summary>
+      <p>Puedes jugar directamente desde nuestro emulador en línea haciendo clic en “Jugar” sobre la miniatura de cada juego. Asegúrate de tener habilitado JavaScript y permisos para ejecutar contenido multimedia en tu navegador.</p>
+    </details>
+
+    <details>
+      <summary>¿Puedo solicitar un juego que no está en la lista?</summary>
+      <p>Sí, utiliza la <a href="contacto.html">página de contacto</a> o nuestra caja de sugerencias para dejarnos tu petición. Revisamos todas las solicitudes semanalmente.</p>
+    </details>
+
+    <details>
+      <summary>¿Qué emuladores utilizáis?</summary>
+      <p>Empleamos emuladores basados en <em>Javascript/WebAssembly</em> como <strong>RetroArch.js</strong> y <strong>EmuJS</strong>, totalmente integrados en el navegador, sin instalaciones adicionales.</p>
+    </details>
+
+    <details>
+      <summary>¿Cómo reporto un fallo o bug?</summary>
+      <p>En la <a href="contacto.html">página de soporte</a> encontrarás un formulario con un campo específico para bugs. Describe el problema, incluye capturas si es posible y nuestro equipo lo revisará a la brevedad.</p>
+    </details>
+
+    <!-- Añade más <details> según necesites -->
+  </main>
+
+  <!-- Footer común -->
+  <footer class="footer">
+    <div class="footer-top container">
+      <!-- Logo -->
+      <div class="footer-logo">
+        <img src="../imgenes/LOGO.png" alt="Retro Games">
+      </div>
+      <!-- Footer nav (4 columnas) -->
+      <nav class="footer-nav">
+        <div class="footer-col">
+          <h4>Juegos</h4>
+          <ul>
+            <li><a href="#">Doom II</a></li>
+            <li><a href="#">Castlevania</a></li>
+            <li><a href="#">Pac-Man</a></li>
+            <li><a href="#">Super Mario 2</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Tiendas</h4>
+          <ul>
+            <li><a href="#">Epic Games Store</a></li>
+            <li><a href="#">ArtStation</a></li>
+            <li><a href="#">Sketchfab</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Herramientas</h4>
+          <ul>
+            <li><a href="#">Unreal Engine</a></li>
+            <li><a href="#">MetaHuman</a></li>
+            <li><a href="#">Megascans</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Servicios</h4>
+          <ul>
+            <li><a href="#">Online Services</a></li>
+            <li><a href="#">Kids Web Services</a></li>
+            <li><a href="#">Acuerdo de servicios</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Redes sociales -->
+       <a class="instagram" href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+      <a class="twitter" href="https://x.com/FILOSOFIAGOD"><i class="fa-brands fa-square-x-twitter"></i></i></a>
+      <a class="youtube" href="https://www.youtube.com/feed/you"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <p>© 2025 Retro Games, Inc. Todos los derechos reservados.</p>
+      <a href="#Up-H" class="back-to-top">↑ Volver arriba</a>
+    </div>
+  </footer>
+
+  <!-- (Opcional) script para acordiones más avanzados -->
+  <script>
+    // Si prefieres controlar la apertura de un solo <details> a la vez:
+    document.querySelectorAll('details').forEach(d => {
+      d.addEventListener('toggle', () => {
+        if (d.open) {
+          document.querySelectorAll('details').forEach(other => {
+            if (other !== d) other.open = false;
+          });
+        }
+      });
+    });
+  </script>
+    
+</body>
+</html>
